@@ -1,3 +1,61 @@
 <resources>
-    <string name="app_name">Shovel Ant</string>
+    <string name="app_name">Shovel Ant 2.0</string>
+    <string name="tower_defense">Tower Defense</string>
+    <string name="lore">Lore</string>
+    <string name="exit">Exit</string>
+    <string-array name="splash">
+        <item>And you thought one was enough</item>
+        <item>The name means nothing</item>
+        <item>Butter Dog approved</item>
+        <item>Nothing else matters</item>
+        <item>Certified fresh</item>
+        <item>Moist</item>
+        <item>Yo button</item>
+        <item>Come to Angler\'s Alliance Wednesday A</item>
+    </string-array>
+    <string-array name="towerNames">
+        <item>Fisherman</item>
+        <item>Laser Cannon</item>
+        <item>Tesla Coil</item>
+        <item>The Sniper</item>
+    </string-array>
+    <string-array name="towerDescriptions">
+        <item>Simplest tower. Only says mornin\’ because if it was a good morning he\'d be fishing. Marriage on thin ice due to his love for fishing.</item>
+        <item>Originally developed by BradLoaf ind. to combat worker strikes. Turns out it also works well at melting fish. Fires a constant laser that reaches a temperature of 271°C.</item>
+        <item>Most know Nikola Tesla for his contributions to science, but what many don\'t know is that his hatred towards fish caused him to develop the ultimate fish-zapper, capable of attacking all in its range.</item>
+        <item>Top-secret, need-to-know special government op. Trained specifically to neutralize fish. No one\'s actually seen them, only heard the legends. They have deadly range and accuracy, but take a while to reload.</item>
+    </string-array>
+    <string-array name="towerStats">
+        <item>Moderate,Medium,Mid,Low,75,100,Increases damage,150,Increases damage and adds armor penetration</item>
+        <item>Very High,Low,Mid,High,100,125,Increases damage,150,Increases damage and range</item>
+        <item>Slow,Low,Short,High,125,150,Increases damage and lowers reload time,200,Increases damage and range</item>
+        <item>Very Slow,High,Very Long,Very High,125,150,Decreases reload time,175,Increase damage and armor penetration</item>
+    </string-array>
+    <string-array name="fishNames">
+        <item>Blobfish</item>
+        <item>Pufferfish</item>
+        <item>Jellyfish</item>
+        <item>Clownfish</item>
+        <item>Narwhal</item>
+        <item>Catfish</item>
+        <item>Butter Dog</item>
+    </string-array>
+    <string-array name="fishDescriptions">
+        <item>The dumbest and most ugly fish in the sea. Lives deep in the ocean, only came to the surface because he wanted butter. Now only serves to take hits for the big guys.</item>
+        <item>Toughest fish on the block. Left his parents\' maid cafe to pursue his dreams of running a biker gang. Acts all tough but is actually soft on the inside. (Very self conscious about his weight)</item>
+        <item>Loner among the fish community. Often mistaken for floating trash. Goes with the flow. Don\'t bother him and he might not bother you.</item>
+        <item>Fears the establishment of a puppet state. Does not interact well with salmon (don\’t ask about it). Will do anything to save his son.</item>
+        <item>Introduction of the unicorn ruined his reputation.  Now he spends his life trying to rid the world of unicorn influence.  Eats 4 eggs a day to maintain his body and size.</item>
+        <item>Only natural predator is rednecks. Things haven\'t been the same since the war in \‘03.  Favorite food is wonder bread but was recently diagnosed with gluten intolerance.</item>
+        <item>Dog with the butter on em\’.</item>
+    </string-array>
+    <string-array name="fishStats">
+        <item>None,Low,Slow,5</item>
+        <item>High,Medium,Slow,10</item>
+        <item>None,Medium,Moderate,5</item>
+        <item>Low,Medium,Fast,8</item>
+        <item>Medium,High,Moderate,25</item>
+        <item>Very High,High,Slow,30</item>
+        <item>Yes,?̵͐͐?̶̐̈́?̷͕̕,?̵͑̄?̵̇̚?̸̍̇,100</item>
+    </string-array>
 </resources>
