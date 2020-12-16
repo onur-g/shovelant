@@ -33,10 +33,10 @@ public class Tower{
                 multiAttack=false;
                 break;
             case 1:
-                attack=2;
+                attack=1;
                 armor=1;
                 range=3;
-                reload=2;
+                reload=1;
                 multiAttack=false;
                 break;
             case 2:
@@ -61,10 +61,10 @@ public class Tower{
                 multiAttack=false;
                 break;
             case 5:
-                attack=3;
+                attack=2;
                 armor=1;
                 range=3;
-                reload=2;
+                reload=1;
                 multiAttack=false;
                 break;
             case 6:
@@ -89,10 +89,10 @@ public class Tower{
                 multiAttack=false;
                 break;
             case 9:
-                attack=4;
+                attack=3;
                 armor=2;
                 range=4;
-                reload=2;
+                reload=1;
                 multiAttack=false;
                 break;
             case 10:

@@ -18,7 +18,7 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class GameView extends SurfaceView{
-    private final long TPS=15;
+    private final long TPS=60;
     private final int WIDTH=10;
     private final int HEIGHT=20;
     private SharedPreferences sharedPreferences;
@@ -41,13 +41,13 @@ public class GameView extends SurfaceView{
         mapBmp=BitmapFactory.decodeResource(getResources(),R.drawable.map);
         gameOverBmp=BitmapFactory.decodeResource(getResources(),R.drawable.gameover);
         fishBmp=new Bitmap[7];
-        fishBmp[0]=BitmapFactory.decodeResource(getResources(),R.drawable.blob);
-        fishBmp[1]=BitmapFactory.decodeResource(getResources(),R.drawable.puffer);
-        fishBmp[2]=BitmapFactory.decodeResource(getResources(),R.drawable.jelly);
-        fishBmp[3]=BitmapFactory.decodeResource(getResources(),R.drawable.clown);
-        fishBmp[4]=BitmapFactory.decodeResource(getResources(),R.drawable.narwhal);
-        fishBmp[5]=BitmapFactory.decodeResource(getResources(),R.drawable.cat);
-        fishBmp[6]=BitmapFactory.decodeResource(getResources(),R.drawable.butter);
+        fishBmp[0]=BitmapFactory.decodeResource(getResources(),R.drawable.blobsprite);
+        fishBmp[1]=BitmapFactory.decodeResource(getResources(),R.drawable.puffersprite);
+        fishBmp[2]=BitmapFactory.decodeResource(getResources(),R.drawable.jellysprite);
+        fishBmp[3]=BitmapFactory.decodeResource(getResources(),R.drawable.clownsprite);
+        fishBmp[4]=BitmapFactory.decodeResource(getResources(),R.drawable.narwhalsprite);
+        fishBmp[5]=BitmapFactory.decodeResource(getResources(),R.drawable.catsprite);
+        fishBmp[6]=BitmapFactory.decodeResource(getResources(),R.drawable.buttersprite);
         towerBmp=new Bitmap[4];
         towerBmp[0]=BitmapFactory.decodeResource(getResources(),R.drawable.fisherman);
         towerBmp[1]=BitmapFactory.decodeResource(getResources(),R.drawable.laser);
@@ -106,14 +106,14 @@ public class GameView extends SurfaceView{
             draw(attacks);
         }
         public void generateFish(int tick){
-            if(tick%900==0){
+            if(tick%3600==0){
                 Fish butter=new Fish(fishBmp[6],6,route,routeDir,getWidth()/WIDTH,getHeight()/HEIGHT);
                 butter.setLocation(0,getHeight()/HEIGHT*9+getHeight()/HEIGHT/2);
                 fishList.add(butter);
             }
             else{
                 Fish fish=null;
-                int difIndex=tick<2700?tick/300:9;
+                int difIndex=tick<10800?tick/1200:9;
                 double[][] difficulty=new double[10][6];
                 difficulty[0]=new double[]{.05,0,0,0,0,0};
                 difficulty[1]=new double[]{.1,.05,0,0,0,0};

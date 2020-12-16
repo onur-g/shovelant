@@ -22,45 +22,45 @@ public class Fish{
         switch(type){
             case 0:
                 health=100;
-                speed=6;
+                speed=2;
                 armor=0;
                 value=5;
                 break;
             case 1:
                 health=200;
-                speed=4;
+                speed=1;
                 armor=5;
                 value=10;
                 break;
             case 2:
                 health=170;
-                speed=8;
+                speed=3;
                 armor=0;
                 value=5;
                 break;
             case 3:
                 health=200;
-                speed=10;
+                speed=4;
                 armor=1;
                 value=8;
                 break;
             case 4:
                 health=600;
-                speed=8;
+                speed=3;
                 armor=3;
                 value=25;
                 break;
             case 5:
                 health=1000;
-                speed=6;
+                speed=2;
                 armor=7;
                 value=30;
                 break;
             default:
-                health=2000;
-                speed=2;
+                health=10000;
+                speed=1;
                 armor=10;
-                value=100;
+                value=200;
         }
         dx=speed;
         dy=0;
@@ -71,6 +71,9 @@ public class Fish{
         }
         setLocation(location.centerX()+dx,location.centerY()+dy);
         canvas.drawBitmap(bmp,source,location,null);
+//        Paint paint=new Paint();
+//        paint.setColor(Color.RED);
+//        canvas.drawRect(location,paint);
         distance++;
         return true;
     }
@@ -81,7 +84,7 @@ public class Fish{
         }
         return 0;
     }
-    public boolean processDirection(int[] route,boolean[] routeDir){
+    private boolean processDirection(int[] route,boolean[] routeDir){
         try{
             if(step%2==0&&(location.centerX()>route[step]&&dx>0||location.centerX()<route[step]&&dx<0)){
                 dx=0;
